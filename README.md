@@ -30,7 +30,7 @@ In order to use this framework, it is necessary to run the code in a certain ord
 
 4. For the other codes there is no specifc order as long as the 1. and 2. steps are performed before.
 
-Furthermore, in order for the code to work properly, it is important that the directory structure is the same described below. This is necessary because the code builds on each other and values are stored and loaded in specific directories. This is done to be able to do the analysis on the data, as some of the calculations, for example the SPEI values, take hours to days depending on the resolution of the model. The structure must be as follows:
+Also, for the code to work properly, it is important that the directory structure is the same as described below. This is necessary because the code builds on each other and values are stored and loaded in specific directories. This is done in order to be able to perform analysis on the data, as some of the calculations, such as the SPEI values, take hours to days depending on the resolution of the model. The structure must be as follows:
 ```
 \data:
   \AR6_regions:

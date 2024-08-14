@@ -9,6 +9,6 @@ In order for the code to funciton properly it is important the structure of the 
       \era5:
         \eff_precip #stores the values for the evaluation
         \model data #contains t2m, tmax, tmin, pr data
-        \nSPEI_HG85_Clair_cal1980_2010 #contains the calculated SPEI values for all regions and aggregation times
+        \nSPEI_HG85_cal1980_2010 #contains the calculated SPEI values for all regions and aggregation times
         \model_data_attr #contains t2m, tmax, tmin, pr data containing the time period of the extreme drought event
 ```

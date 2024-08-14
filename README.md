@@ -2,19 +2,27 @@
 This repository shows the code used to plot the figures for the dissertation: "How Climate Change affects Droughts in South America – Copula-Based Drought Analysis with an Event Attribution Case Study".
 
 Here is an overview of the provided codes with a short descibtion:
-* calc_SPEI_obs_era5.ipynb - Calculates the SPEI values for ERA5
-* calc_SPEI_obs_mswep.ipnb - Calculates the SPEI values for MSWEP/MSWX
-* calc_SPEI_CMIP6.ipnb - Calculates the SPEI values for the CMIP6 models
-* Im_Methods.ipynb - Creates the figures used in the shown in the methodology section
-* Im_SPEI6_era5_MarginalCheck.ipynb - Creates the figure visualising the marginal distribution fitting
+* calc_SPEI_obs_era5.ipynb - Calculates the SPEI values for ERA5.
+* calc_SPEI_obs_mswep.ipnb - Calculates the SPEI values for MSWEP/MSWX.
+* calc_SPEI_CMIP6.ipnb - Calculates the SPEI values for the CMIP6 models.
+* Im_Methods.ipynb - Creates the figures used in the shown in the methodology section.
+* Im_SPEI6_era5_MarginalCheck.ipynb - Creates the figure visualising the marginal distribution fitting.
+* IM_Attr_SpatialExtent_obs_era5_nSPEI.ipynb - Creates the figure visualising the spatial extent of the drought event for SPEI-6 and SPEI-12. It also determines the specific drought charactersitics (duration, severity, beginning, end) of the drought event according to ERA5.
+* Attr_SPEI_obs_mswep.ipynb - Determines the specific drought charactersitics (duration, severity, beginning, end) of the drought event according to MSWEP/MSWX.
+* Im_Attr_CMIP_SDF.ipynb - Creates the figure visualsing the SDF curves of the CMIP6 model for the Extreme Event Attribution. It also calculates the return period for the analysed Extreme Event based on the drought charactersitics obtained through the two observational models.
+* Attr_SPEI6_PR.ipynb - Calculates the Probability Ratios for the CMIP6 models based on SPEI-6. Provides the mean, upper and lower values for each scenario and each model. The results can then be used to calculate the model-ensemble using the "https://climexp.knmi.nl/synthesis.cgi" website.
+* Attr_SPEI12_PR.ipynb  - Calculates the Probability Ratios for the CMIP6 models based on SPEI-12. Provides the mean, upper and lower values for each scenario and each model. The results can then be used to calculate the model-ensemble using the "https://climexp.knmi.nl/synthesis.cgi" website.
+* Im_Attr_probRatios.ipynb - Creates the figures visualises the Probability Ratio. This code uses the result files from the "https://climexp.knmi.nl/synthesis.cgi" website.
 
 In order to use this framework, it is necessary to run the code in a certain order, as some of the code uses data stored in the above structure. This enumeration should be seen as a sort of recipe for how to use what is provided.
 
 1. Run the code calc_SPEI_obs_era5.ipynb and calc_SPEI_obs_mswep.ipynb to test the different marginal distributions for each region. This code must be run 3 times for the different aggregation periods (1, 6 and 12) in order to store the necessary values and to check the distrbutions each time. The place to change the aggregation is indicated in the code under "Define aggregation time".
 
-2. Run the code calc_SPEI_CMIP6.ipynb to calculate and safe the SPEI values for the CMIP6 models. This code must be run 3 times for the different aggregation periods (1, 6 and 12) and also for all 8 CMIP6 in order to store the necessary values. The place where to change the model and the aggregation period is indicatd in the code. It is also possible to just safe the code 8 times, each time with a different chosen model to have a better overview.
+2. Run the code calc_SPEI_CMIP6.ipynb to calculate and safe the SPEI values for the CMIP6 models. This code must be run 3 times for the different aggregation periods (1, 6 and 12) and also for all 8 CMIP6 in order to store the necessary values (SPEI timeseries and Severity for a drought of a given return period and duration). The place where to change the model and the aggregation period is indicatd in the code. It is also possible to just safe the code 8 times, each time with a different chosen model to have a better overview.
 
-3. Now the other codes can be run in any order.
+3. For the Attribtutin codes the (indicated by Attr) there is also a specific order!!!
+
+4. Now the other codes can be run in any order.
 
 Furthermore, in order for the code to work properly, it is important that the directory structure is the same described below. This is necessary because the code builds on each other and values are stored and loaded in specific directories. This is done to be able to do the analysis on the data, as some of the calculations, for example the SPEI values, take hours to days depending on the resolution of the model. The structure must be as follows:
 ```
@@ -25,19 +33,19 @@ Furthermore, in order for the code to work properly, it is important that the di
       \era5:
         \eff_precip # stores the values for the evaluation
         \model data # contains t2m, tmax, tmin, pr data
-        \model_data_attr # contains t2m, tmax, tmin, pr data containing the time period of the extreme drought event
+        \model_data_attr # contains t2m, tmax, tmin, pr data including the time period of the extreme drought event
         \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
-        \extended_nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times containing the time period of the extreme drought event
+        \extended_nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times including the time period of the extreme drought event
       \mswep_mswx:
         \eff_precip # stores the values for the evaluation
         \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
-        \extended_nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times containing the time period of the extreme drought event
+        \extended_nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times including the time period of the extreme drought event
         \mswep_pr # contains the preciptation data
         \mswep_tmax # contains the tmax data
         \mswep_tmin # contains the tmin data
-        \mswep_pr_nrt # contains the preciptation data containing the time period of the extreme drought event
-        \mswep_tmax_nrt # contains the tmax data containing the time period of the extreme drought event
-        \mswep_tmin_nrt # contains the tmin data containing the time period of the extreme drought event
+        \mswep_pr_nrt # contains the preciptation data including the time period of the extreme drought event
+        \mswep_tmax_nrt # contains the tmax data including the time period of the extreme drought event
+        \mswep_tmin_nrt # contains the tmin data including the time period of the extreme drought event
   \CMIP6:
     \ACCESS-CM2:
       \eff_precip # stores the values for the evaluation

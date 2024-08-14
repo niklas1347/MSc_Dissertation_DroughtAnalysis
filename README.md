@@ -25,8 +25,8 @@ In order for the code to work properly, it is important that the directory struc
 ```
 In order to use this framework, it is necessary to run the code in a certain order, as some of the code uses data stored in the above structure. This enumeration should be seen as a sort of recipe for how to use what is provided.
 
-```
+
 1. Run the code for SPEI_obs_era5.ipynb and SPEI_obs_mswep.ipynb to test the different marginal distributions for each region. This code must be run 3 times for the different aggregation periods (1, 6 and 12) in order to store the necessary values and to check the distrbutions each time. The place to change the aggregation is indicated in the code under "Define aggregation time".
 
 2.  
-```
+

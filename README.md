@@ -43,34 +43,42 @@ Furthermore, in order for the code to work properly, it is important that the di
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \ACCESS-ESM1-5:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \CanESM5:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \FGOALS-g3:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \IPSL-CM6A-LR:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \MIROC6:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \MRI-ESM2-0:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
     \NorESM2-LM:
       \eff_precip # stores the values for the evaluation
       \model_data # contains t2m, tmax, tmin, pr data
       \nSPEI_HG85_cal1980_2010 # contains the calculated SPEI values for all regions and aggregation times
+      \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
   \attribution:
     \synthesis_files_climate_explorer # contains the synthesis files which contain the calculated model-ensemble and intermodel spread, the file is downloaded from the "https://climexp.knmi.nl/synthesis.cgi" website
 

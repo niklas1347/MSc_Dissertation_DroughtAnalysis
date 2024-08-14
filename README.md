@@ -28,7 +28,7 @@ In order to use this framework, it is necessary to run the code in a certain ord
 
 3. For the Attribtutin codes the (indicated by Attr) it is important to run IM_Attr_SpatialExtent_obs_era5_nSPEI.ipynb and Attr_SPEI_obs_mswep.ipynb first to get the drought characteristics (duration and severity) based on the observation models. In addition, Attr_SPEI6_PR.ipynb and Attr_SPEI12_PR.ipynb must be run before Im_Attr_probRatios.ipynb, using the "https://climexp.knmi.nl/synthesis.cgi" website in between to obtain the required input files.
 
-4. For the other codes there is no specifc order as long as the 1. and 2. steps are performed before
+4. For the other codes there is no specifc order as long as the 1. and 2. steps are performed before.
 
 Furthermore, in order for the code to work properly, it is important that the directory structure is the same described below. This is necessary because the code builds on each other and values are stored and loaded in specific directories. This is done to be able to do the analysis on the data, as some of the calculations, for example the SPEI values, take hours to days depending on the resolution of the model. The structure must be as follows:
 ```

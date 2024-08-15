@@ -2,6 +2,7 @@
 This repository shows the code used to plot the figures for the dissertation: "How Climate Change affects Droughts in South America – Copula-Based Drought Analysis with an Event Attribution Case Study".
 
 Here is an overview of the provided codes with a short descibtion:
+* mscthesis_nm_drought.yml - This is the working environment which can be used to run the code.
 * Im_Methods.ipynb - Creates the figures used in the shown in the methodology section.
 * calc_SPEI_obs_era5.ipynb - Calculates the SPEI values for ERA5.
 * calc_SPEI_obs_mswep.ipnb - Calculates the SPEI values for MSWEP/MSWX.

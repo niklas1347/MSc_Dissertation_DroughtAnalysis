@@ -96,6 +96,10 @@ Also, for the code to work properly, it is important that the directory structur
       \results_sev_given_T_D # contains the severity values for a drought of a given return period and a given Duration, necessary in order to plot the SDF curves
   \attribution:
     \synthesis_files_climate_explorer # contains the synthesis files which contain the calculated model-ensemble and intermodel spread, the file is downloaded from the "https://climexp.knmi.nl/synthesis.cgi" website
-
 ```
+
+The necessary data (tas, tasmin, tasmax and pr) can be downloaded from the following sides:
+* ERA5: https://climexp.knmi.nl/
+* MSWEP/MSWX: https://www.gloh2o.org/
+* CMIP6:  https://aims2.llnl.gov/search/, recommended tool: sydna package (https://docs.nesi.org.nz/Scientific_Computing/Supported_Applications/Synda/)
 

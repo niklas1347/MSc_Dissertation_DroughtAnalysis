@@ -23,7 +23,7 @@ Here is an overview of the provided codes with a short descibtion:
 
 In order to use this framework, it is necessary to run the code in a certain order, as some of the code uses data stored in the structure described below. This enumeration should be seen as a sort of "recipe":
 
-1. Run the code calc_SPEI_obs_era5.ipynb and calc_SPEI_obs_mswep.ipynb to test the different marginal distributions for each region. This code must be run 3 times for the different aggregation periods (1, 6 and 12) in order to store the necessary values and to check the distrbutions each time. The place to change the aggregation is indicated in the code under "Define aggregation time".
+1. Run the code calc_SPEI_obs_era5.ipynb and calc_SPEI_obs_mswep.ipynb to test the different marginal distributions for each region. This code must be run 3 times for the different aggregation periods (1, 6 and 12) in order to store the necessary values (SPEI Timeseries) and to check the distrbutions each time. The place to change the aggregation is indicated in the code under "Define aggregation time".
 
 2. Run the code calc_SPEI_CMIP6.ipynb to calculate and safe the SPEI values for the CMIP6 models. This code must be run 3 times for the different aggregation periods (1, 6 and 12) and also for all 8 CMIP6 in order to store the necessary values (SPEI timeseries and Severity for a drought of a given return period and duration). The place where to change the model and the aggregation period is indicatd in the code. It is also possible to just safe the code 8 times, each time with a different chosen model to have a better overview.
 

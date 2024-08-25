@@ -21,7 +21,7 @@ Here is an overview of the provided codes with a short descibtion:
 * Attr_SPEI12_PR.ipynb  - Calculates the Probability Ratios for the CMIP6 models based on SPEI-12. Provides the mean, upper and lower values for each scenario and each model. The results can then be used to calculate the model-ensemble using the "https://climexp.knmi.nl/synthesis.cgi" website.
 * Im_Attr_probRatios.ipynb - Creates the figures visualises the Probability Ratio. This code uses the result files from the "https://climexp.knmi.nl/synthesis.cgi" website.
 
-In order to use this framework, it is necessary to run the code in a certain order, as some of the code uses data stored in the above structure. This enumeration should be seen as a sort of "recipe":
+In order to use this framework, it is necessary to run the code in a certain order, as some of the code uses data stored in the structure described below. This enumeration should be seen as a sort of "recipe":
 
 1. Run the code calc_SPEI_obs_era5.ipynb and calc_SPEI_obs_mswep.ipynb to test the different marginal distributions for each region. This code must be run 3 times for the different aggregation periods (1, 6 and 12) in order to store the necessary values and to check the distrbutions each time. The place to change the aggregation is indicated in the code under "Define aggregation time".
 
